@@ -35,7 +35,7 @@ public class Qes1_13 {
 		flt = 0.0f;
 		dbl = 0.0d;
 		chr = '\u0000';
-		str = "null";
+		str = null;
 		bool = false;
 		
 		/*
@@ -67,7 +67,7 @@ public class Qes1_13 {
 		System.out.println(chr+" "+str+" "+bool);
 		System.out.println(Math.round(byt+srt+in+lng+flt+dbl));
 		System.out.println(byt*srt*in*lng);
-		System.out.println(dbl/100);
+		System.out.println(dbl/srt);
 		System.out.println(byt-srt);
 		
 		System.out.println("");
@@ -99,7 +99,7 @@ public class Qes1_13 {
 		String name = "山田太郎";
 		int age = 18;
 		double height = 170.5;
-		double weight = 64.2;
+		double weight = 62.2;
 		String food = "寿司";
 		
 
@@ -195,6 +195,16 @@ public class Qes1_13 {
 		*/
 		//10.8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
 		
+		//8で使用した値の再代入
+	
+		name = "鈴木一郎";
+		age = 24;
+		height = 168.5;
+		weight = 64.2;
+		food = "オムライス";
+		bmi = weight/Math.pow(height/100,2);
+		
+		//true.falseの判定
 		boolean isolder = (age > 25);
 		System.out.println(isolder);
 		System.out.println("");

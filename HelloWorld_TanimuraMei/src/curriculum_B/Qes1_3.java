@@ -34,12 +34,7 @@ public class Qes1_3 {
 			break;}
 		}
 	}
-	
-
-
-
-	
-	
+		
 		
   public static String judgeNameMessage(String name) {
 	  String judgeName  = "";

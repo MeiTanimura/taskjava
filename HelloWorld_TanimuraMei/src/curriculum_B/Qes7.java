@@ -29,7 +29,7 @@ public class Qes7 {
 			
 			System.out.println("");
 			
-		}//for
+		}
 		
 		sc.close();
 		
@@ -37,7 +37,7 @@ public class Qes7 {
 			int totalScore = English[i] + Math[i] + Science[i] + Society[i];
 			System.out.printf( "%d人目の平均点は" + (float)totalScore/(float)4 + "点です。",i+1);
 			System.out.println("");
-		}//for
+		}
 		
 		System.out.println("");
 		
@@ -62,10 +62,11 @@ public class Qes7 {
 			 societyTotal = societyTotal + Society[i];}
 		System.out.println("社会の平均点は" + (float)societyTotal/(float)n + "点です。");
 		
-	}//main
+		int scores = englishTotal + mathTotal  + scienceTotal + societyTotal;
+		System.out.println("全体の平均点は" + (float)scores/(float)(n*4) + "点です。");
+	}
 	
 	
-}//class
-
+}
 
 

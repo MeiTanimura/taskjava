@@ -35,17 +35,17 @@ public class Curriculum_New_1_18 {
 
 	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
 	// ※小数点以下も表示されるようにしてください。
-	public static int average(int[] randomNumber) { //配列randomNumberを受け取って処理を行う
+	public static double average(int[] randomNumber) { //配列randomNumberを受け取って処理を行う
 		int total = 0;
 		for(int i = 0;i<randomNumber.length;i++) {
 			total = total + randomNumber[i];}
-		int averageNumber = total/randomNumber.length;
+		double averageNumber = (double)total/(double)randomNumber.length;
 		System.out.println(averageNumber);
 		 return averageNumber;
 		}
 	
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
-	public static void judge(int averageNumber) {
+	public static void judge(double averageNumber) {
 		if (averageNumber >=  50) {
 			System.out.println("true");
 		}else {
@@ -55,14 +55,21 @@ public class Curriculum_New_1_18 {
 
 	public static void main(String[] args) {
     // 作成したメソッドをここで呼び出してください
-	hello("Hello","JavaSE",11);
-	keisan(2,3);
-	int [] arr = {1,2,3};
+	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
+	hello("Hello","JavaSE",11); 
+	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
+	keisan(2,3); 
+	// Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッドを作成してください
+	int [] arr = {1,2,3}; 
 	numbers(arr);
+	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
 	keisan(1.5,2.4);
-	random(5);
-	average(random(5)); //avarageを呼び出して、配列randomNumberを引数として渡す 
-	judge(average(random(5)));
+	// Q5：引数に整数を渡すと、1～100までのランダムな数字を引数の回数分格納して格納した値を順番にコンソールで出力後、格納した値を返すメソッドを作成してください。
+	int[] numbers= random(5); 
+	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
+	double number =average(numbers); 
+	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
+	judge(number); 
 	}
 }
 
